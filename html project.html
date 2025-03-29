@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="ism/css/my-slider.css"/>
+    <script src="ism/js/ism-2.2.min.js"></script>
+
+    <link
+     href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400;700;800&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="music-store\main_reg.css">
+    <title>HULKIFY</title>
+</head>
+<body>
+ 
+
+    <header>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="login_reg.html">My playlist</a>
+        <a href="#">Saved</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+      
+      <script>
+2      function openNav() {
+        document.getElementById("mySidenav").style.width = "180px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      
+   
+      <div class="logo"><div id="mySidenav" class="sidenav"></div><h1>HUL<span>KIFY</span></div>
+        <div class="search-box">
+            <from action="">
+                <input type="text" name="search " id="srch" placeholder="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </from>
+        </div>
+        <ul>
+        <li><a href="login.html">sign in</a></i>
+        <li><a href="index.html">MY playlist</a></li>
+        <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/vikrambairwa3125/?hl=en"><i class="fab fa-instagram"></i></a>
+        </li>
+        </ul>
+        
+    
+    </header>
+    
+
+    
+    <container>
+     
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="WhatsApp Image 2024-11-06 at 18.02.25_fd9bda32.jpg" style="width:100%">
+        <button class="button">Coming soon</button> 
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="WhatsApp Image 2024-11-06 at 18.02.24_0bfd3309.jpg" style="width:100%">
+        <div class="text">Coming soon</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="WhatsApp Image 2024-11-06 at 18.02.24_f6677479.jpg" style="width:100%">
+        <div class="text">Coming soon</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)"></a>
+      <a class="next" onclick="plusSlides(1)"></a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++; 
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3500); // Change image every 2 seconds
+        }
+        </script>
+        
+    
+    </container>
+
+    
+  
+    
+    
+        <div class="music-list-container">
+          <h1 class="music-list-title">TRENDING SONGS</h1>
+          <div class="music-list-wrapper">
+            <div class="music-list">
+              <div class="music-list-item">
+                <img class="music-list-item-img" src="WhatsApp Image 2024-11-06 at 18.22.20_b66e7c12.jpg" style="height: 370px;width: 280px;"  alt="">
+               
+                   <button class="music-list-item-button">PLAY NOW</button> 
+              </div>
+              <div class="music-list-item">
+                <img class="music-list-item-img" src="WhatsApp Image 2024-11-06 at 18.22.20_ea92fa35.jpg"  style="height: 370px;width: 280px;" alt="">
+               
+                   <button class="music-list-item-button">PLAY NOW</button> 
+              </div>
+              <div class="music-list-item">
+                <img class="music-list-item-img" src="https://i2.wp.com/www.socialnews.xyz/wp-content/uploads/2021/01/01/Telugu-Movies-2021-New-Year-and-Announcement-HD-Posters-2.jpg?quality=80&zoom=1&ssl=1" style="height: 370px;" alt="">
+               
+                   <button class="music-list-item-button">PLAY NOW</button> 
+              </div>
+              <div class="music-list-item">
+                <img class="music-list-item-img" src="https://assets.gadgets360cdn.com/pricee/assets/product/202206/Kushi-poster_1654881514.jpg"  style="height: 370px;" alt="">
+                
+                   <button class="music-list-item-button">PLAY NOW</button> 
+              </div>
+              <div class="music-list-item">
+                <img class="music-list-item-img" src="https://m.media-amazon.com/images/M/MV5BNTdkM2YxNjAtZjI2NC00MmNhLTg5NjMtNjk0ZTJhNTZiNjY4XkEyXkFqcGdeQXVyNzE4MjUzMzA@._V1_.jpg" style="height: 370px;" alt="">
+               
+                   <button class="music-list-item-button">PLAY NOW</button> 
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          
+        <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
+        <div class="music-2list-container">
+          <h1 class="music-2list-title">NEW BOLLYWOOD SONGS</h1>
+          <div class="music-2list-wrapper">
+            <div class="music-2list">
+              <div class="music-2list-item">
+                <img class="music-2list-item-img" src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/09/dhokha-round-d-corner-001.jpg" style="height: 370px;width: 280px;"  alt="">
+               
+                   <button class="music-2list-item-button">PLAY NOW</button> 
+              </div>
+              <div class="music-2list-item">
+                <img class="music-2list-item-img" src="WhatsApp Image 2024-11-06 at 18.36.13_ea243434.jpg" style="height: 370px;width: 280px;" alt="">
+               
+                   <button class="music-2list-item-button">PLAY NOW</button> 
+              </div>
+              <div class="music-2list-item">
+                <img class="music-2list-item-img" src="https://filmfare.wwmindia.com/content/2019/dec/upcoming-bollywood-movies-2020-ae-kash-ke-hum-61577106195.jpg" style="height: 370px; width: 280px;" alt="">
+               
+                   <button class="music-2list-item-button">PLAY NOW</button> 
+              </div>
+              <div class="music-2list-item">
+                <img class="music-2list-item-img" src="https://assets.gadgets360cdn.com/pricee/assets/product/202212/maarrich_1671536791.jpg" style="height: 370px;width: 280px;" alt="">
+                
+                   <button class="music-2list-item-button">PLAY NOW</button> 
+              </div>
+              <div class="music-2list-item">
+                <img class="music-2list-item-img" src="https://m.media-amazon.com/images/M/MV5BNzQxNjk4ODMtZDgzZC00M2RlLWE2N2ItM2M2OGEyMTgyNmQyXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg" style="height: 370px; width: 280px;" alt="">
+               
+                   <button class="music-2list-item-button">PLAY NOW</button> 
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
+          <div class="music-3list-container">
+            <h1 class="music-3list-title">NEW TOP 100 SONGS</h1>
+            <div class="music-3list-wrapper">
+              <div class="music-3list">
+                <div class="music-3list-item">
+                  <img class="music-3list-item-img" src="https://moviegalleri.net/wp-content/gallery/tej-i-love-you-movie-release-today-posters/tej-i-love-you-movie-release-posters-sai-dharam-tej-anupama-parameswaran-0b8b82c.jpg" style="height: 370px;"  alt="">
+                 
+                     <button class="music-3list-item-button">PLAY NOW</button> 
+                </div>
+                <div class="music-3list-item">
+                  <img class="music-3list-item-img" src="https://pbs.twimg.com/media/FXdf0EXaQAEUlnn.jpg"  style="height: 370px; width: 280px;" alt="">
+                 
+                     <button class="music-3list-item-button">PLAY NOW</button> 
+                </div>
+                <div class="music-3list-item">
+                  <img class="music-3list-item-img" src="https://i.pinimg.com/564x/92/32/53/9232533fc80325aa915fb224514ed9fe--travel-movies-time-travel.jpg" style="height: 370px;  width: 280px;" alt="">
+                 
+                     <button class="music-3list-item-button">PLAY NOW</button> 
+                </div>
+                <div class="music-3list-item">
+                  <img class="music-3list-item-img" src="https://images.indianexpress.com/2019/02/varunx.jpeg"  style="height: 370px; width: 280px;" alt="">
+                  
+                     <button class="music-3list-item-button">PLAY NOW</button> 
+                </div>
+                <div class="music-3list-item">
+                  <img class="music-3list-item-img" src="https://i0.wp.com/99lyricstore.com/wp-content/uploads/2019/12/Muqabla2BLyrics2BStreet2BDancer2B3D.jpg" style="height: 370px;width: 270px;" alt="">
+                 
+                     <button class="music-3list-item-button">PLAY NOW</button> 
+                </div>
+              </div>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
+           
+            
+      
+      <footer>
+        <div class="footer-section">
+          <div class="sec aboutus">
+            <h2>About Us</h2>
+            <p>“What About Us is an epic protest musical that embraces East and West, crosses sensitive borders and brings the hope of peace through incredible music and dance. It’s a musical for our times.” </p>
+              <ul class="sci">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>    
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+          </div>
+          <div class="sec quickLinks">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="index.html">PLAY NOW</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Terms & Consitions</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="sec contact">
+            <h2>Contact Info</h2>
+            <ul class="info">
+              <li>
+                <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                <span>Tandon Wasi<br>
+                Prayagraj,211004,<br>INDIA</span>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-phone" aria-hoidden="true"></i></span>
+                <p><a href="tel:12345678900">+91 9538199908</a><br>
+                    <a href="tel:12345678900">+91 7607751040</a></p>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                <p><a href="mailto:musicbooking@email.com">musicsquare@email.com</a></p>
+              </li>
+            </ul>
+          </div>
+         
+       
+        
+
+       
+        
+        
+        
+   
+</body>
+
+
+</footer>
+
+
+
+    
+    
+
+
+
+</body>
+</html>
